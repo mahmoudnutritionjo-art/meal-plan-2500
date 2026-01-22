@@ -3,25 +3,41 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meal Plans</title>
+  <title>خطط الوجبات</title>
   <style>
     body{font-family:system-ui,Arial;background:#fafafa;padding:24px}
-    .wrap{max-width:800px;margin:0 auto}
-    h1{margin:0 0 12px}
-    a{display:block;background:#fff;border:1px solid #ddd;border-radius:12px;
-      padding:14px 16px;margin:10px 0;text-decoration:none;color:#111}
+    .wrap{max-width:900px;margin:0 auto}
+    h1{margin:0 0 8px}
+    .small{color:#666;margin-bottom:14px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    a{display:block;background:#fff;border:1px solid #ddd;border-radius:14px;
+      padding:16px;text-decoration:none;color:#111}
     a:hover{border-color:#bbb}
-    .small{color:#666;font-size:14px}
+    .kcal{font-size:22px;font-weight:700;margin-bottom:6px}
+    .hint{color:#666;font-size:14px}
   </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>خطط الوجبات</h1>
-  <div class="small">اختر السعرات:</div>
+  <h1>اختار خطة السعرات</h1>
+  <div class="small">اضغط على الخطة المناسبة لفتح جدول 7 أيام.</div>
 
-  <a href="./1600/">1600 كالوري</a>
-  <a href="./2000/">2000 كالوري</a>
-  <a href="./2500/">2500 كالوري</a>
+  <div class="grid">
+    <a href="./1600/">
+      <div class="kcal">1600 كالوري</div>
+      <div class="hint">عرض الجدول</div>
+    </a>
+
+    <a href="./2000/">
+      <div class="kcal">2000 كالوري</div>
+      <div class="hint">عرض الجدول</div>
+    </a>
+
+    <a href="./2500/">
+      <div class="kcal">2500 كالوري</div>
+      <div class="hint">عرض الجدول</div>
+    </a>
+  </div>
 </div>
 </body>
 </html>
